@@ -19,6 +19,10 @@ pipeline {
             }
             
         }
+        stage ('Taulant'){
+            steps{
+                echo "THis is the first stage that i am testing"
+            }
         stage('Deploy to Production'){
             steps{
                 timeout(time:5, unit:'DAYS'){
